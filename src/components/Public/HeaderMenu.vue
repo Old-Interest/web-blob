@@ -123,4 +123,10 @@ export default {
     }
   }
 }
+.ant-tabs-nav .ant-tabs-tab-active {
+  border-bottom: 3px solid #1890ff;
+}
+.ant-tabs-ink-bar {
+  background-color: transparent !important;
+}
 </style>
