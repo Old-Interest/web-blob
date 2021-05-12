@@ -238,7 +238,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
 * {
   margin: 0;
   padding: 0;
@@ -249,6 +249,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+  .ant-layout {
+    height: 100%;
+    .ant-layout-content {
+      height: calc(100% - 64px);
+      overflow: hidden;
+    }
+  }
 }
 .ant-layout-header {
   padding: 0 !important;

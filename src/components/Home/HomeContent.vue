@@ -34,7 +34,8 @@ export default {
     width: 100%;
     .swiper-slide {
         img {
-            max-width: 100%
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 }

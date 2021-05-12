@@ -5,13 +5,16 @@
         <HomeContent :imageList="skinCareList"/>
       </a-tab-pane>
       <a-tab-pane key="2" tab="彩妆">
-        彩妆
+        <HomeContent :imageList="makeUpCareList"/>
       </a-tab-pane>
       <a-tab-pane key="3" tab="头发护理">
-        头发护理
+        <HomeContent :imageList="hairCareList"/>
       </a-tab-pane>
       <a-tab-pane key="4" tab="身体护理">
-        身体护理
+        <HomeContent :imageList="bodyCareList"/>
+      </a-tab-pane>
+      <a-tab-pane key="5" tab="其他">
+        <HomeContent :imageList="otherCareList"/>
       </a-tab-pane>
     </a-tabs>
     <!-- <a-menu
@@ -81,6 +84,58 @@ export default {
         {
           id: 3,
           url: require("../../assets/skin3.jpg")
+        }
+      ],
+      makeUpCareList: [
+        {
+          id: 1,
+          url: require("../../assets/makeUp1.jpg")
+        },
+        {
+          id: 2,
+          url: require("../../assets/makeUp2.jpg")
+        },
+        {
+          id: 3,
+          url: require("../../assets/makeUp3.jpg")
+        },
+        {
+          id: 4,
+          url: require("../../assets/makeUp4.jpg")
+        }
+      ],
+      hairCareList: [
+        {
+          id: 1,
+          url: require("../../assets/hair1.jpg")
+        },
+        {
+          id: 2,
+          url: require("../../assets/hair2.jpg")
+        },
+        {
+          id: 3,
+          url: require("../../assets/hair3.jpg")
+        }
+      ],
+      bodyCareList: [
+        {
+          id: 1,
+          url: require("../../assets/body1.jpg")
+        },
+        {
+          id: 2,
+          url: require("../../assets/body2.jpg")
+        }
+      ],
+      otherCareList: [
+        {
+          id: 1,
+          url: require("../../assets/other1.png")
+        },
+        {
+          id: 2,
+          url: require("../../assets/other2.jpg")
         }
       ]
     };
